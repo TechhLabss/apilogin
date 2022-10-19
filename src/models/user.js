@@ -3,17 +3,13 @@ const mongoose = require('../database');
 const UserSchema = new mongoose.Schema({
     email: {
         type: String,
-        required: true,
+        required: true
     },
     senha: {
         type: String,
         required: true,
-        select: false,
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    },
+        select: false
+    }
 });
 
 const User = mongoose.model('User', UserSchema);
