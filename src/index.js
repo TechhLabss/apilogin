@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 require('./controllers/authController')(app);
 
-app.listen(PORT);
+app.listen(3000);
